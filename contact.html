@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <title>PortpoltioBuilder!</title>
+    <!-- --> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file and jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      
+    </script>
+    <script src="/script.js" defer></script>  
+    <header>
+        <nav>
+      <div class="wrapper_nav">
+            <h1>Portfolio Builder</h1>   <img src="https://cdn.glitch.com/2ce51045-e0be-442f-987a-7a845cc5e8c6%2FBuilding-Blocks-graph-01.png?1551537607308"  height="200" width="200" align="left" alt="logo" draggable="true" ondragstart="drag(event)">   <h4>Used by Students, Professionals, and Creatives Around the Globe!</h4>  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="content.html">Portfolio</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+          </nav>
+        </header>
+<body>
+ <br>
+  <p1 style="font-size:20px; font-weight:bold">Conveniently Located At Brooklyn College! </p1>
+  <br>
+  
+<iframe width="425" height="350" frameborder="4" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.96438121795656%2C40.62436016966133%2C-73.93605709075929%2C40.63924414903953&amp;layer=mapnik&amp;marker=40.631802574062505%2C-73.95021915435791" style="border: 1px solid black"></iframe><br/>
+  
+  
+  <p1 style="font-size:20px; font-weight:bold">Having Trouble Locating Yourself?  </p1> <br>
+  
+  <button  style="font-size:20px; font-weight:bold" onclick="getLocation()"> Click here to get your location!</button>
+  <p id="location"></p>
+
+  
+<h3 style="font-size:20px" >We'd love your feeback!</h3>
+  
+<textarea rows="4" cols="50" name="comment" form="usrform" placeholder ="Enter your suggestions, comments, and concerns...">
+</textarea>
+  
+  <form id="usrform">
+<input style="width:10%;" type="text" name="usrname" placeholder="Your Email">
+  <br>
+  <input style="width:10%;" type="submit">
+</form>
+
+<p><b>Note:</b> All comments will get a response within 24 hours.</p>
+  
+<script>
+var x = document.getElementById("location");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>    
+</body>
+</html>
+
+

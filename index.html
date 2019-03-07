@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PortpoltioBuilder!</title>
+    <!-- --> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file and jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+     </script>
+    <script src="/script.js" defer>
+    </script>
+      
+       
+  </head> 
+  <body>
+  <header>
+        <nav>
+      <!--The following <div> we use as a wrapper-->
+      <!--A wrapper is used as a container for all the content on the website-->
+      <!--With a wrapper we can align ALL content to the left, right, or even center it-->
+      <div class="wrapper_nav">
+            <h1>Portfolio Builder</h1>   <img src="https://cdn.glitch.com/2ce51045-e0be-442f-987a-7a845cc5e8c6%2FBuilding-Blocks-graph-01.png?1551537607308" 
+               height="200" width="200" align="left" alt="logo"  >   <h4>Used by Students, Professionals, and Creatives Around the Globe!</h4>  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="content.html">Portfolio</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+          </nav>
+        </header>
+          
+  <div id="wrapper">  
+   <form method="GET" action="content.html" onsubmit="return Validate()" name="vform" >
+        <h3>
+     Getting Started is Easy! <br>Just fill out the fourm below to get started: 
+    </h3>
+<!--     <div id="getStarted"> -->
+  <fourm class="userInput">    
+    <div id="project-info">
+      <input type="text" maxlength="30" placeholder="First Name" />
+      <br>
+      <input type="text" maxlength="30" placeholder="Last Name" />
+ <p id="display-msg">
+      I want to display: 
+      </p>
+  <input type="checkbox" name="option" value="Passion Project"> Passion Project<br>
+  <input type="checkbox" name="option" value="School Work" > School Work<br>
+  <input type="checkbox" name="option" value="Professional" > Professional Work<br>
+  <input type="text" onfocus="if(this.value == 'Other') { this.value = ''; }" value="Other" /> 
+      </div>
+      <div id="account-creation">
+     	<div id="email_div">
+   	  <label>Email</label> <br>
+   	  <input type="email" name="email" class="textInput" maxlength="30" >
+   	</div>
+   	<div id="password_div">
+   	  <label>Password</label> <br>
+   	  <input type="password" name="password" class="textInput" maxlength="30" >
+   	</div>
+   	<div id="pass_confirm_div">
+   	   <label>Password confirm</label> <br>
+   	   <input type="password" name="password_confirm" class="textInput" maxlength="30" >
+   	   <div id="password_error"></div>
+   	</div>
+   	<div >
+   	<input id="reg-btn" onclick = "emailVerify()" type="submit" name="register" value="Register"  class="btn" maxlength="30" >
+      <div id="reg_error"></div>
+   	</div> 
+<p>By creating an account you agree to our <a href="https://policies.google.com/terms" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <div style="float: left; margin-top: 0px;">
+          Have an acccount?
+       <a href="signin.html" class="smallLinkButton">Sign in</a>
+            </div>
+         </div>
+    </fourm>
+
+     
+      </form>   
+  </div>
+    
+   </body>     
+</html>

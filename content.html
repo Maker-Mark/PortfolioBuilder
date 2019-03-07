@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <title>PortpoltioBuilder!</title>
+    <!-- --> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file and jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="/script.js" defer></script>
+     
+ <header>  
+         <nav>
+      <!--The following <div> we use as a wrapper-->
+      <!--A wrapper is used as a container for all the content on the website-->
+      <!--With a wrapper we can align ALL content to the left, right, or even center it-->
+      <div class="wrapper_nav">
+            <h1>Portfolio Builder</h1>   <img src="https://cdn.glitch.com/2ce51045-e0be-442f-987a-7a845cc5e8c6%2FBuilding-Blocks-graph-01.png?1551537607308" 
+               height="200" width="200" align="left" alt="logo">   <h4>Used by Students, Professionals, and Creatives Around the Globe!</h4>  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="content.html">Portfolio</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+          </nav>
+        </header>
+  
+  
+<div class="wraper" >
+  <div id="project" style="border: 6px solid #ccc;
+  border-radius: 1;">
+    
+
+  <h3>Add a new porfolio:</h3>
+  <select>
+  <option value="From Template">From Template</option>
+  <option value="Empty">Empty</option>
+  <option value="Clone Project">Clone Project</option>
+</select>
+    
+    <div >
+         
+       <a href="signin.html" class="smallLinkButton">Start</a>
+            </div>
+    
+      </div>
+  
+    
+  
+  <div id="editproject" style="border: 6px solid #ccc;
+  border-radius: 1;">
+    <h3>
+      Edit current portfolio:
+    </h3>
+    <select>
+  <option value="UX-Display">UX-Display</option>
+  <option value="Portfolio1">Portfolio1</option>
+  <option value="job-juneApp">juneApp</option>
+  <option value="firstportfolio">firstportfolio</option>  
+    </select>  
+    
+    <div id="selectors">
+       <select multiple>
+  <option value="UX-Display">UX-Display</option>
+  <option value="Portfolio1">Portfolio1</option>
+  <option value="job-juneApp">juneApp</option>
+  <option value="firstportfolio">firstportfolio</option> 
+         
+    </select > 
+      <h4>
+           Email copies to:
+         </h4>
+       
+      <fourm>
+      <input style="width:20%" border-radius: 1; type="email" name="emailaddress" placeholder="email " >
+        on 
+      <input type="date" name="send date"> 
+      <input type="textarea" rows="2" cols="50" maxlength ="100" placeholder ="Add a note" > 
+      </fourm>
+      <div >
+         
+       <a href="signin.html" class="smallLinkButton">Start</a>
+            </div>
+     
+      <p>Choose one of the images below and drag it into the rectangle(if you like both, try both:)!</p>
+
+<div style="background-color:black ; width:660px;height:330px" id="picture_choice" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+<br>
+<img id="drag1" src="https://cdn.glitch.com/08ff85ba-c32e-41a7-9a3d-b30d746c41a0%2Fpie.jpg?1551829668056" draggable="true" ondragstart="drag(event)" width="330" height="330">
+      <img id="drag2" src="https://cdn.glitch.com/08ff85ba-c32e-41a7-9a3d-b30d746c41a0%2Fpi.jpg?1551829700401" draggable="true" ondragstart="drag(event)" width="330" height="330">
+      
+      
+    </div>
+
+  </div>
+  </div>
+
+  <h3>
+    
+  </h3>
+
+<div id="wraper"> 
+    
+      <ul class="socialmedia">
+        <li><a href= "https://medium.com/@Brax_Me/have-you-been-zucked-how-your-privacy-is-disappearing-daily-2be2087e04b4">Facebook</a></li>
+        <li><a href= "https://twitter.com/Applegate">  Twitter</a></li>
+        <li><a href="https://www.instagram.com/cuny_brokelyn_college/"> Instagram</a></li>
+        </ul>
+        </div>
+  
+  
+  <script>
+  function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}</script>
+  
+</html>

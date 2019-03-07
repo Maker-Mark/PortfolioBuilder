@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <title>PortpoltioBuilder!</title>
+    <!-- --> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file and jquery -->
+  
+    <script src="/script.js" defer></script>
+  
+   <header>
+    
+         <nav>
+      <!--The following <div> we use as a wrapper-->
+      <!--A wrapper is used as a container for all the content on the website-->
+      <!--With a wrapper we can align ALL content to the left, right, or even center it-->
+      <div class="wrapper_nav">
+            <h1>Portfolio Builder</h1>   <img src="https://cdn.glitch.com/2ce51045-e0be-442f-987a-7a845cc5e8c6%2FBuilding-Blocks-graph-01.png?1551537607308" 
+               height="200" width="200" align="left" alt="logo">   <h4>Used by Students, Professionals, and Creatives Around the Globe!</h4>  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="content.html">Portfolio</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+          </nav>
+        </header>
+
+<body>
+  
+
+<p><button id = "site_visits" onclick="clickCounter()" type="button">Click me before you login!</button></p>
+<div style ="width:8%" id="count_vists">
+  
+  </div>
+
+
+
+<div id="login-box" style="width : 10% ; width:600px; margin:0 auto;" >
+  <h3 style="text-align:center" >Welcome Back!</h3>
+     <form action="content.html">
+    <input style="width:50% " type="text" id="email" name="email" placeholder="Email">
+        <br> <br>
+    <input style="width:50%" type="text" id="pw" name="pw" placeholder="Password">
+    <br><p4>Enter Your Phone Number for verifcation </p4>  <br> 
+   <input class="inputs" style="width:10%" type="text" maxlength="3" placeholder="###" />
+   <input class="inputs" style="width:10%" type="text" maxlength="3" placeholder="####" />
+    <input class="inputs" style="width:10%" type="text" maxlength="4" placeholder="###"/>
+
+  <br>
+    <input style="width:30% " type="submit" value="Sign In"><a href="signin.html" class="smButton"> I forgot my password</a>
+         
+ <div style=" margin-top: 0px;"> 
+                <a href="index.html" class="smButton">Dont have an account? Click here to get started! </a> 
+            </div>
+   
+  </form>
+</div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script>  $(".inputs").keyup(function () {
+    if (this.value.length == this.maxLength) {
+      var $next = $(this).next('.inputs');
+      if ($next.length)
+          $(this).next('.inputs').focus();
+      else
+          $(this).blur();
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+.wrapper_nav{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color:#1abc9c;
+  color: white;
+}
+.wrapper_nav a:hover, .dropdown:hover .dropbtn {
+  background-color: coral;
+  border: 1px solid #ccc;
+  border-radius: 1;
+  box-sizing: border-box;
+  padding: 1;
+  margin: 1;
+}
+
+ul {
+  margin-left: 0px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 100px;
+}
+
+
+ul.socialmedia{
+  background: #1abc9c;
+  list-style-type: circle;
+}
+ul li a {
+  
+  display: block;
+  text-decoration: none;
+  color: #1e1e1e;
+  padding: 0 20px;
+  font-size: 24px;
+  font-family: arial;
+/*    Short hand of font follow*/
+/*   font: normal 20px arial ; */
+}
+
+ul li a:hover {
+  color: blue;
+}
+
+ input[type=password] {
+  width: 70%;
+  padding: 1px 1px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 70%;
+/*   padding: 10px 10px; */
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 70%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  input[type=text], select {
+  width: 70%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+  input[type=submit] {
+  width: 70%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.smallLinkButton{
+  width: 15%;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+input[type=submit] {
+  width: 70%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: lightblue;
+  text-align: left ;
+  padding: 1px;
+}
+
+header {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 25px;
+  border: 2px ;
+
+}
+header img {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+}
+  header a {
+    padding-top: 10px;
+    padding-right: 5px;
+    font-size: 16px;
+    text-align: left; }
+
+  header h1 {
+    margin: 0;
+    padding-top: 0px;
+    text-align:left;
+    
+    
+}header h4 {
+    padding-top: 0px;
+    margin-left: 10px;
+    text-align:left;   
+}
+
+
+/* name_div{
+height: 28px;
+  margin: 2px;
+  border: 1px solid #6B7363;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 95%;
+} */
+
+.btn {
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  color: blue;
+  background-color: #3b5998;
+  border-radius: 5px;
+  padding: 12px;
+}
+#wrapper {
+  
+  width: 100%;
+/*   margin:  auto;
+  padding: 50px; */
+  background: #D7FBFF;
+  overflow: hidden;
+  
+  
+}
+#project-info{
+  width:49%;
+  float:left;
+/*   background:green; */
+}
+
+#account-creation{
+  width:45%;
+  float:right;
+/*   background:yellow; */
+
+}
+
+
+.textInput {
+  height: 28px;
+  margin: 1px;
+  border: 1px solid #6B7363;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 15%;
+}
+
+#splashMsg {
+   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-style: italic;
+  color:red;
+  margin: 1em;
+  text-align: left;
+  border: 2px ;
+  padding: 15px;
+  
+}
+
+#splashMsg {
+   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-style: italic;
+  color:red;
+  margin: 1em;
+  text-align: left;
+  
+}
+#splashDiv{
+ position: relative;
+ left: 10px;
+ top: 50px;
+}
+
+ul.feed{
+ list-style-type: square;
+  margin: 1;
+  padding: 0;
+}
